@@ -28,6 +28,7 @@
             --accent-red: #E63946;
             --accent-purple: #7B2CBF;
             --accent-amber: #F77F00;
+            --accent-yellow: #FFD000;
             --glass-bg: rgba(20, 20, 30, 0.6);
             --glass-border: rgba(255, 255, 255, 0.05);
             --shadow-glow: 0 0 40px rgba(0, 180, 216, 0.15);
@@ -309,6 +310,7 @@
         .status-ok { background: rgba(0, 200, 100, 0.2); color: #00C864; }
         .status-error { background: rgba(230, 57, 70, 0.2); color: var(--accent-red); }
         .status-warning { background: rgba(255, 183, 3, 0.2); color: var(--accent-orange); }
+        .status-yellow { background: rgba(255, 208, 0, 0.2); color: var(--accent-yellow); }
         .status-info { background: rgba(0, 180, 216, 0.2); color: var(--accent-blue); }
 
         .capture-container {
@@ -960,7 +962,8 @@
                 <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin: 40px 0; flex-wrap: wrap;">
                     <div style="font-size: 4rem; opacity: 0.5;">📄</div>
                     <div style="font-size: 3rem; color: var(--accent-blue);">➡</div>
-                    <div style="font-size: 4rem;">📱</div> <!-- CAMBIADO: ordenador → tablet -->
+                    <div style="font-size: 4rem;">📱</div>
+                    <div style="font-size: 4rem;">💻</div>
                 </div>
                 <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
                     <div style="background: var(--glass-bg); padding: 20px 30px; border-radius: 12px; border: 1px solid var(--glass-border);">
@@ -1334,8 +1337,8 @@
                                     <span class="status-badge status-warning">Naranja</span>
                                     <p style="margin-top: 5px; font-size: 0.85rem; color: var(--text-secondary);">DUPLICADOS</p>
                                 </div>
-                                <div style="background: var(--bg-tertiary); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent-amber);">
-                                    <span class="status-badge status-warning">Ámbar</span>
+                                <div style="background: var(--bg-tertiary); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent-yellow);">
+                                    <span class="status-badge status-yellow">Amarillo</span>
                                     <p style="margin-top: 5px; font-size: 0.85rem; color: var(--text-secondary);">SECCIÓN SIN DEFINIR</p>
                                 </div>
                                 <div style="background: var(--bg-tertiary); padding: 12px; border-radius: 8px; border-left: 4px solid var(--accent-red);">
