@@ -903,14 +903,17 @@
                     De los datos a la decisión.<br>
                     De la decisión a la fabricación.
                 </p> -->
+
+                <!-- Animación: El taller X% digital -->
+                <div style="margin-top: 36px; display: flex; align-items: baseline; justify-content: center; gap: 0; flex-wrap: wrap;">
+                    <span style="font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 300; color: var(--text-secondary); letter-spacing: 0.04em;">El taller&nbsp;</span>
+                    <span id="counter-percent" style="font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 900; color: var(--accent-blue); letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums;">0%</span>
+                    <span style="font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 300; color: var(--text-secondary); letter-spacing: 0.04em;">&nbsp;digital</span>
+                </div>
+
                 <p style="color: var(--text-muted); margin-top: 30px; font-size: 0.9rem; letter-spacing: 0.1em;">
                     Ingeniería de Fabricación
                 </p>
-                <!--<div style="margin-top: 40px; display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <span style="color: var(--text-secondary); font-size: 0.8rem; border: 1px solid var(--border-color); padding: 4px 16px; border-radius: 20px;">📄 Informe de Cableado</span>
-                    <span style="color: var(--text-secondary); font-size: 0.8rem; border: 1px solid var(--border-color); padding: 4px 16px; border-radius: 20px;">⚙️ Proceso Digital</span>
-                    <span style="color: var(--text-secondary); font-size: 0.8rem; border: 1px solid var(--border-color); padding: 4px 16px; border-radius: 20px;">🚄 Ferrocarril</span>
-                </div> -->
             </div>
         </section>
 
@@ -924,9 +927,9 @@
                     <div>
                         <div class="paper-stack">
                             <div class="paper-sheet"><span>📄 Conexión: A-12</span> <span class="highlight-problem">Verificar manualmente</span></div>
-                            <div class="paper-sheet"><span>📄 Cable: 107-1</span> <span class="highlight-problem">Buscar en índice</span></div>
+                            <div class="paper-sheet"><span>📄 Cable: 107-1</span> <span class="highlight-problem">Buscar en papel</span></div>
                             <div class="paper-sheet"><span>📄 Terminal: 640230</span> <span class="highlight-problem">Comprobar sección</span></div>
-                            <div class="paper-sheet"><span>📄 Crimpado:</span> <span class="highlight-problem">Interpretar tabla</span></div>
+                            <div class="paper-sheet"><span>📄 Crimpado:</span> <span class="highlight-problem">Consultar WI en programa aparte</span></div>
                             <div class="paper-sheet"><span>📄 Incidencia:</span> <span class="highlight-problem">Reportar y corregir</span></div>
                             <div style="margin-top: 10px; text-align: center; color: var(--text-muted); font-size: 0.8rem;">
                                 🔄 Dependencia · Interpretación · Retraso
@@ -936,11 +939,12 @@
                     <div class="flex-center" style="align-items: flex-start; text-align: left;">
                         <h3 style="color: var(--accent-red); margin-bottom: 10px;">Consecuencias</h3>
                         <ul style="list-style: none; color: var(--text-secondary);">
-                            <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Búsqueda manual de información</span></li>
+                            <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Lentitud (búsqueda manual de información)</span></li>
                             <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Interpretación subjetiva de los datos</span></li>
                             <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Comprobaciones en papel propensas a errores</span></li>
-                            <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Correcciones y actualizaciones lentas</span></li>
-                            <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Dependencia de diferentes departamentos</span></li>
+                            <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Correcciones sobre el propio papel</span></li>
+                            <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Feedback a IFA, nulo o lento, para realizar correcciones</span></li>
+                            <li style="margin-bottom: 12px; display: flex; gap: 10px; align-items: center;">❌ <span>Riesgo de trabajar con versiones obsoletas</span></li>
                         </ul>
                         <p style="margin-top: 20px; font-weight: 600; color: var(--text-primary); border-left: 3px solid var(--accent-red); padding-left: 16px;">
                             El papel informa.<br>
@@ -990,14 +994,37 @@
                 <h2 class="title-medium">Una herramienta, múltiples capacidades</h2>
                 
                 <div class="feature-grid">
-                    <div class="feature-item"><div class="icon">📂</div><div>Carga de informes Excel</div></div>
+                    <div class="feature-item"><div class="icon">📂</div><div>Carga de informes Excel (Proto o Sap)</div></div>
                     <div class="feature-item"><div class="icon">✅</div><div>Control de calidad del fichero</div></div>
                     <div class="feature-item"><div class="icon">🔍</div><div>Búsqueda global y filtros</div></div>
-                    <div class="feature-item"><div class="icon">📊</div><div>Esquema interactivo</div></div>
+                    <div class="feature-item">
+                        <div class="icon" style="height: 32px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" style="color: var(--accent-blue);">
+                                <!-- Row 1 -->
+                                <rect x="2" y="6.5" width="5" height="3" />
+                                <line x1="7" y1="8" x2="12" y2="8" />
+                                <rect x="12" y="6" width="8" height="4" fill="currentColor" stroke="none" />
+
+                                <!-- Row 2 -->
+                                <rect x="12" y="14" width="8" height="4" fill="currentColor" stroke="none" />
+                                <line x1="20" y1="16" x2="25" y2="16" />
+                                <rect x="25" y="14.5" width="5" height="3" />
+
+                                <!-- Row 3 -->
+                                <rect x="2" y="22.5" width="5" height="3" />
+                                <line x1="7" y1="24" x2="12" y2="24" />
+                                <rect x="12" y="22" width="8" height="4" fill="currentColor" stroke="none" />
+                                <line x1="20" y1="24" x2="25" y2="24" />
+                                <rect x="25" y="22.5" width="5" height="3" />
+                            </svg>
+                        </div>
+                        <div>Esquema interactivo</div>
+                    </div>
                     <div class="feature-item"><div class="icon">👁️</div><div>Modo Visión (paso a paso)</div></div>
                     <div class="feature-item"><div class="icon">📋</div><div>Información de materiales</div></div>
                     <div class="feature-item"><div class="icon">🔧</div><div>Especificaciones de crimpado</div></div>                    
-                    <div class="feature-item"><div class="icon">📤</div><div>Exportación de manguitos y errores</div></div>
+                    <div class="feature-item"><div class="icon">📤</div><div>Exportación de manguitos para su impresión</div></div>
+                    <div class="feature-item"><div class="icon">⚠️</div><div>Feedback de errores</div></div>
                     <div class="feature-item"><div class="icon">💾</div><div>Preparación del informe para su carga en Sap</div></div>
                     <div class="feature-item"><div class="icon">🌐</div><div>Consulta del esquema eléctrico en Windchill</div></div>
                     <div class="feature-item"><div class="icon">📈</div><div>Seguimiento</div></div>
@@ -1033,7 +1060,7 @@
 
         <!-- ==========================================
         ESCENA 6: INFORMACIÓN DE MATERIALES
-        ========================================== -->
+        ========================================== 
         <section class="scene" data-scene="materiales">
             <div>
                 <span class="badge">MATERIALES</span>
@@ -1050,9 +1077,9 @@
                         <hr style="border-color: var(--border-color); margin: 15px 0;">
                         <h4>Materiales asociados</h4>
                         <ul style="list-style: none; margin-top: 10px;">
-                            <li class="list-item"><span>🔌 Terminales</span> <span>2 unidades (T-102)</span></li>
-                            <li class="list-item"><span>🧵 Manguitos</span> <span>2 unidades (M-45)</span></li>
-                            <li class="list-item"><span>🔗 Conexiones</span> <span>3 conexiones asociadas</span></li>
+                            <li class="list-item"><span>🔌 Terminales</span> <span>2 unidades (640230)</span></li>
+                            <li class="list-item"><span>🧵 Manguitos</span> <span>2 unidades (649D10014)</span></li>
+                            <li class="list-item"><span>🔗 Conexiones</span> <span>2 conexiones asociadas</span></li>
                         </ul>
                     </div>
                     <div class="card-glass">
@@ -1060,8 +1087,8 @@
                         <div style="background: var(--bg-tertiary); border-radius: 8px; padding: 20px; margin-top: 10px; border-left: 3px solid var(--accent-blue);">
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">
                                 <span style="color: var(--text-primary); font-weight: 600;">Cable 7B</span> conecta con 
-                                <span style="color: var(--accent-blue);">Terminal T-102</span> a través de 
-                                <span style="color: var(--accent-orange);">Manguito M-45</span>.
+                                <span style="color: var(--accent-blue);">Terminal 640230</span> y se identifica con 
+                                <span style="color: var(--accent-orange);">Manguito 649D10014</span>.
                             </p>
                             <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px;">
                                 Cantidades y especificaciones disponibles en tiempo real.
@@ -1073,67 +1100,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
-        <!-- ==========================================
-        ESCENA 7: CRIMPADO
-        ========================================== -->
-        <section class="scene" data-scene="crimpado">
-            <div>
-                <span class="badge">CRIMPADO</span>
-                <h2 class="title-medium">Fabricar con información precisa</h2>
-                <p class="subtitle">La instrucción de fabricación está donde se ejecuta.</p>
-                <div class="grid-2col">
-                    <div>
-                        <div class="capture-container" style="max-width: 600px; margin: 0 auto;">
-                            <img src="Imágenes presentación/7-especificación técnica de crimpado.png" alt="Especificación técnica de crimpado" loading="lazy" style="width:100%; height:auto; background: var(--bg-tertiary);">
-                            <!-- Hotspot de ejemplo -->
-                            <div class="hotspot" style="top: 35%; left: 55%;">
-                                <div class="hotspot-tooltip">
-                                    <strong>🔧 Información de crimpado</strong>
-                                    <ul style="list-style: none; margin-top: 5px; font-size: 0.8rem; color: var(--text-secondary);">
-                                        <li>Tenaza: TH-123</li>
-                                        <li>Posicionador: POS-45</li>
-                                        <li>Extractor: EXT-67</li>
-                                        <li>Pelacables: PL-89</li>
-                                        <li>Longitud de pelado: 8 mm</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div style="padding: 10px; background: var(--bg-tertiary); text-align: center; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border-color);">
-                                Captura real: Especificación técnica de crimpado
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 style="color: var(--accent-blue);">Acceso directo a la especificación</h3>
-                        <p style="color: var(--text-secondary);">Al seleccionar un pin en el esquema gráfico, se accede inmediatamente a:</p>
-                        <ul style="list-style: none; margin-top: 20px;">
-                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
-                                <span style="font-size: 1.5rem;">🔧</span> Tenaza / Crimpadora
-                            </li>
-                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
-                                <span style="font-size: 1.5rem;">🎯</span> Posicionador
-                            </li>
-                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
-                                <span style="font-size: 1.5rem;">🔩</span> Extractor
-                            </li>
-                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
-                                <span style="font-size: 1.5rem;">✂️</span> Pelacables
-                            </li>
-                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
-                                <span style="font-size: 1.5rem;">📏</span> Longitud de pelado
-                            </li>
-                        </ul>
-                        <p style="margin-top: 20px; color: var(--text-muted); font-style: italic; border-top: 1px solid var(--border-color); padding-top: 15px;">
-                            La interacción parece una consulta directa del proceso de fabricación.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================
+         <!-- ==========================================
         ESCENA 8: ESQUEMA GRÁFICO
         ========================================== -->
         <section class="scene" data-scene="esquema">
@@ -1219,6 +1188,66 @@
                 </div>
             </div>
         </section>
+        
+        <!-- ==========================================
+        ESCENA 7: CRIMPADO
+        ========================================== -->
+        <section class="scene" data-scene="crimpado">
+            <div>
+                <span class="badge">CRIMPADO</span>
+                <h2 class="title-medium">Fabricar con información precisa</h2>
+                <p class="subtitle">La instrucción de fabricación está donde se ejecuta.</p>
+                <div class="grid-2col">
+                    <div>
+                        <div class="capture-container" style="max-width: 600px; margin: 0 auto;">
+                            <img src="Imágenes presentación/7-especificación técnica de crimpado.png" alt="Especificación técnica de crimpado" loading="lazy" style="width:100%; height:auto; background: var(--bg-tertiary);">
+                            <!-- Hotspot de ejemplo -->
+                            <div class="hotspot" style="top: 35%; left: 55%;">
+                                <div class="hotspot-tooltip">
+                                    <strong>🔧 Información de crimpado</strong>
+                                    <ul style="list-style: none; margin-top: 5px; font-size: 0.8rem; color: var(--text-secondary);">
+                                        <li>Tenaza: TH-123</li>
+                                        <li>Posicionador: POS-45</li>
+                                        <li>Extractor: EXT-67</li>
+                                        <li>Pelacables: PL-89</li>
+                                        <li>Longitud de pelado: 8 mm</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="padding: 10px; background: var(--bg-tertiary); text-align: center; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border-color);">
+                                Captura real: Especificación técnica de crimpado
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-blue);">Acceso directo a la especificación</h3>
+                        <p style="color: var(--text-secondary);">Al seleccionar un pin en el esquema gráfico, se accede inmediatamente a:</p>
+                        <ul style="list-style: none; margin-top: 20px;">
+                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
+                                <span style="font-size: 1.5rem;"></span> Tenaza / Crimpadora
+                            </li>
+                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
+                                <span style="font-size: 1.5rem;"></span> Posicionador
+                            </li>
+                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
+                                <span style="font-size: 1.5rem;"></span> Extractor
+                            </li>
+                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
+                                <span style="font-size: 1.5rem;"></span> Pelacables
+                            </li>
+                            <li style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px; background: var(--glass-bg); padding: 10px 16px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
+                                <span style="font-size: 1.5rem;"></span> Longitud de pelado
+                            </li>
+                        </ul>
+                        <p style="margin-top: 20px; color: var(--text-muted); font-style: italic; border-top: 1px solid var(--border-color); padding-top: 15px;">
+                            Las dudas a un clic.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
 
         <!-- ==========================================
         ESCENA 10: MANGUITOS
@@ -1227,7 +1256,7 @@
             <div>
                 <span class="badge">AUTOMATIZACIÓN</span>
                 <h2 class="title-medium">Manguitos: un solo clic</h2>
-                <p class="subtitle">Una tarea que antes requería preparación manual se convierte en una acción integrada en el flujo digital.</p>
+                <p class="subtitle">Una tarea que antes requería preparación manual se convierte en una automatización de un sólo clic.</p>
                 <div class="grid-2col">
                     <div>
                         <div class="capture-container">
@@ -1239,16 +1268,13 @@
                     </div>
                     <div>
                         <h3 style="color: var(--accent-blue);">Flujo de trabajo automatizado</h3>
-                        <ul style="list-style: none; margin-top: 15px;">
-                            <li class="list-item"><span>🧵 Manguito M-45</span> <span class="status-badge status-ok">Listo</span></li>
-                            <li class="list-item"><span>🧵 Manguito M-12</span> <span class="status-badge status-ok">Listo</span></li>
-                            <li class="list-item"><span>🧵 Manguito M-78</span> <span class="status-badge status-warning">Pendiente</span></li>
-                            <li class="list-item"><span>🧵 Manguito M-33</span> <span class="status-badge status-ok">Listo</span></li>
-                        </ul>
+                        <div class="capture-container" style="margin-top: 15px;">
+                            <img src="Imágenes presentación/Manguitos.png" alt="Manguitos" loading="lazy" style="width:100%; height:auto; background: var(--bg-tertiary);">
+                        </div>
                         <button style="margin-top: 20px; background: var(--accent-blue); color: var(--bg-primary); border: none; padding: 10px 24px; border-radius: 8px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; width: 100%;">📤 Exportar manguitos</button>
                         <div style="margin-top: 15px; background: var(--bg-tertiary); padding: 12px; border-radius: 8px; border-left: 3px solid var(--accent-cyan);">
                             <p style="color: var(--text-secondary); font-size: 0.9rem;">
-                                Información del informe → identificación automática → exportación
+                                Información del informe → identificación automática → exportación → envío para su impresión
                             </p>
                         </div>
                     </div>
@@ -1283,9 +1309,9 @@
                         <div class="card-glass">
                             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
                                 <h3 style="color: var(--text-secondary);">Progreso de fabricación</h3>
-                                <span class="status-badge status-info">Planificado: 40%</span>
+                               <!-- <span class="status-badge status-info">Planificado: 40%</span>
                                 <span class="status-badge status-warning">En fabricación: 35%</span>
-                                <span class="status-badge status-ok">Completado: 25%</span>
+                                <span class="status-badge status-ok">Completado: 25%</span>-->
                             </div>
                             <div class="progress-track">
                                 <div class="progress-step completed">
@@ -1303,7 +1329,7 @@
                             </div>
                             <div style="background: var(--bg-tertiary); border-radius: 8px; padding: 15px; margin-top: 10px;">
                                 <p style="color: var(--text-secondary); font-size: 0.9rem;">
-                                    <span style="color: var(--accent-blue);">Útil para:</span> Operario, Responsable de Producción, Supervisión e Ingeniería de Fabricación.
+                                    <span style="color: var(--accent-blue);">Útil para:</span> Operario (cambio de turno), Responsable de Producción y calidad.
                                 </p>
                             </div>
                         </div>
@@ -1399,7 +1425,7 @@
 
         <!-- ==========================================
         ESCENA 14: VALIDACIÓN DE TERMINALES
-        ========================================== -->
+        ========================================== 
         <section class="scene" data-scene="validacion">
             <div>
                 <span class="badge badge-accent">VALIDACIÓN</span>
@@ -1451,7 +1477,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
 
         <!-- ==========================================
         ESCENA 15: SAP SIN SORPRESAS
@@ -1479,11 +1505,11 @@
                             <span class="flow-arrow">→</span>
                             <span class="flow-step error">TXT</span>
                             <span class="flow-arrow">→</span>
-                            <span class="flow-step error">Formato</span>
+                            <span class="flow-step error">Edición TXT</span>
                             <span class="flow-arrow">→</span>
                             <span class="flow-step error">SAP</span>
                             <span class="flow-arrow">→</span>
-                            <span class="flow-step error">ERROR</span>
+                            <span class="flow-step error">ERROR (sin pistas)</span>
                             <span class="flow-arrow">→</span>
                             <span class="flow-step error">Investigación</span>
                             <span class="flow-arrow">→</span>
@@ -1501,6 +1527,8 @@
                             <span class="flow-step success">Preparación</span>
                             <span class="flow-arrow">→</span>
                             <span class="flow-step success">TXT listo</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-step success">SAP sin sorpresas</span>
                         </div>
                         <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px; text-align: center;">
                             Un solo flujo controlado. La validación ocurre antes de la exportación.
@@ -1552,7 +1580,7 @@
                         <span style="color: var(--accent-blue);">IT deja de ser el cuello de botella</span> para cada pequeña evolución funcional.
                     </p>
                     <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 10px;">
-                        La propiedad funcional del conocimiento permanece cerca del proceso: Producción ↔ Ingeniería de Fabricación.
+                        Mejora contínua en tiempo real: de Producción a Ingeniería.<a href="" class=""></a>
                     </p>
                 </div>
             </div>
@@ -1621,7 +1649,7 @@
         <section class="scene scene-cierre" data-scene="cierre">
             <div>
                 <span class="badge badge-accent">ICG VISION</span>
-                <h1 class="title-large" style="font-size: clamp(2.5rem, 5vw, 4rem);">El taller ya tiene memoria digital.</h1>
+                <h1 class="title-large" style="font-size: clamp(2.5rem, 5vw, 4rem);">Cablear ya es digital.</h1>
                 <h1 class="title-large" style="font-size: clamp(2.5rem, 5vw, 4rem); color: var(--accent-blue);">La información estaba ahí. Ahora puede verse.</h1>
                 <div class="line-glow"></div>
                 <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 30px;">
@@ -1629,14 +1657,17 @@
                         Menos errores. Más calidad.
                     </p>
                     <p style="font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 300; letter-spacing: 0.05em; color: var(--text-secondary);">
+                        Menor curva de aprendizaje. Mayor productividad.
+                    </p>
+                    <p style="font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 300; letter-spacing: 0.05em; color: var(--text-secondary);">
                         Equipos más autónomos. Procesos más ágiles.
                     </p>
                     <p style="font-size: clamp(1rem, 1.5vw, 1.4rem); font-weight: 700; letter-spacing: 0.05em; color: var(--accent-blue);">
-                        Resultados más predecibles. Siempre.
+                        Resultados más predecibles.
                     </p>
                 </div>
-                <div style="margin-top: 50px; border-top: 1px solid var(--border-color); padding-top: 20px; width: 80%; max-width: 400px;">
-                    <p style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 0.1em;">
+                <div style="margin: 50px auto 0 auto; border-top: 1px solid var(--border-color); padding-top: 20px; width: 80%; max-width: 400px; text-align: center;">
+                    <p style="color: var(--text-muted); font-size: 0.8rem; letter-spacing: 0.1em; text-align: center;">
                         Ingeniería de Fabricación
                     </p>
                 </div>
@@ -2002,6 +2033,44 @@
                     }
                 });
             })();
+
+            // ==========================================
+            // CONTADOR ANIMADO PORTADA: 0% → 100%
+            // ==========================================
+            let _counterRunning = false;
+
+            function runPortadaCounter() {
+                const el = document.getElementById('counter-percent');
+                if (!el || _counterRunning) return;
+                _counterRunning = true;
+                let current = 0;
+                const duration = 1800;
+                const steps = 100;
+                const interval = duration / steps;
+                const timer = setInterval(() => {
+                    current++;
+                    el.textContent = current + '%';
+                    if (current >= 100) {
+                        clearInterval(timer);
+                        _counterRunning = false;
+                    }
+                }, interval);
+            }
+
+            // Resetear y re-lanzar cada vez que se vuelve a la portada
+            const _origUpdateUI = updateUI;
+            updateUI = function(index) {
+                _origUpdateUI(index);
+                if (index === 0) {
+                    const el = document.getElementById('counter-percent');
+                    if (el) el.textContent = '0%';
+                    _counterRunning = false;
+                    setTimeout(runPortadaCounter, 400);
+                }
+            };
+
+            // Arranque inicial
+            setTimeout(runPortadaCounter, 700);
 
         });
     </script>
