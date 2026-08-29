@@ -470,6 +470,10 @@
             padding: 20px;
             text-align: center;
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
 
         .feature-item:hover {
@@ -479,6 +483,10 @@
 
         .feature-item .icon {
             font-size: 2rem;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 10px;
         }
 
@@ -647,6 +655,112 @@
         .autonomy-item .icon {
             font-size: 2.5rem;
             margin-bottom: 10px;
+        }
+
+        /* ---- Entorno actual / Arquitectura ---- */
+        .env-flow {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .env-card {
+            flex: 1 1 200px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            padding: 20px 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .env-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .env-card.highlight {
+            border-color: var(--accent-blue);
+            background: rgba(0, 180, 216, 0.08);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .env-card .env-icon {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .env-card h4 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+        }
+
+        .env-card.highlight h4 {
+            color: var(--accent-blue);
+        }
+
+        .env-card p {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .env-arrow {
+            color: var(--accent-blue);
+            font-size: 1.4rem;
+            opacity: 0.8;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .env-arrow {
+                display: none;
+            }
+        }
+
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            font-size: 0.88rem;
+            background: var(--glass-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+        }
+
+        .tech-table th {
+            text-align: left;
+            padding: 14px 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(20, 20, 30, 0.7);
+        }
+
+        .tech-table td {
+            padding: 14px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .tech-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .tech-table td.param {
+            color: var(--accent-blue);
+            font-weight: 600;
+            white-space: nowrap;
         }
 
         .scene-cierre {
@@ -906,7 +1020,7 @@
 
                 <!-- Animación: El taller X% digital -->
                 <div style="margin-top: 36px; display: flex; align-items: baseline; justify-content: center; gap: 0; flex-wrap: wrap;">
-                    <span style="font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 300; color: var(--text-secondary); letter-spacing: 0.04em;">El taller&nbsp;</span>
+                    <span style="font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 300; color: var(--text-secondary); letter-spacing: 0.04em;">Hacia un taller&nbsp;</span>
                     <span id="counter-percent" style="font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 900; color: var(--accent-blue); letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums;">0%</span>
                     <span style="font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 300; color: var(--text-secondary); letter-spacing: 0.04em;">&nbsp;digital</span>
                 </div>
@@ -998,7 +1112,7 @@
                     <div class="feature-item"><div class="icon">✅</div><div>Control de calidad del fichero</div></div>
                     <div class="feature-item"><div class="icon">🔍</div><div>Búsqueda global y filtros</div></div>
                     <div class="feature-item">
-                        <div class="icon" style="height: 32px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                        <div class="icon">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" style="color: var(--accent-blue);">
                                 <!-- Row 1 -->
                                 <rect x="2" y="6.5" width="5" height="3" />
@@ -1121,14 +1235,14 @@
                     <!-- Hotspots de conexión -->
                     <div class="hotspot" style="top: 30%; left: 25%;">
                         <div class="hotspot-tooltip">
-                            <strong>🔌 Conexión principal</strong>
-                            <p style="font-size: 0.8rem; color: var(--text-secondary);">Cable 7B → Terminal X4</p>
+                            <strong>Esquema visual</strong>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary);">Materiales + especificaciones</p>
                         </div>
                     </div>
                     <div class="hotspot" style="top: 60%; left: 70%;">
                         <div class="hotspot-tooltip">
-                            <strong>🔧 Pin de crimpado</strong>
-                            <p style="font-size: 0.8rem; color: var(--text-secondary);">Especificaciones disponibles</p>
+                            <strong> Navegación entre elmentos a un clic</strong>
+                            
                         </div>
                     </div>
                     <div style="padding: 10px; background: var(--bg-tertiary); text-align: center; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border-color);">
@@ -1314,22 +1428,22 @@
                                 <span class="status-badge status-ok">Completado: 25%</span>-->
                             </div>
                             <div class="progress-track">
-                                <div class="progress-step completed">
-                                    <div class="circle">✔</div>
-                                    <span class="label">Planificado</span>
-                                </div>
-                                <div class="progress-step active">
-                                    <div class="circle">●</div>
-                                    <span class="label">En fabricación</span>
+                                <div class="progress-step">
+                                    <div class="circle" style="background: rgba(71, 85, 105, 0.35); border-color: #64748b; color: #94a3b8;">X</div>
+                                    <span class="label" style="color: #94a3b8;">Pendiente</span>
                                 </div>
                                 <div class="progress-step">
-                                    <div class="circle">3</div>
-                                    <span class="label">Completado</span>
+                                    <div class="circle" style="background: rgba(123, 44, 191, 0.35); border-color: var(--accent-purple); color: #d8b4fe; box-shadow: 0 0 15px rgba(123, 44, 191, 0.35);">●</div>
+                                    <span class="label" style="color: #d8b4fe;">En fabricación</span>
+                                </div>
+                                <div class="progress-step">
+                                    <div class="circle" style="background: rgba(0, 200, 100, 0.3); border-color: #00C864; color: #00C864; box-shadow: 0 0 15px rgba(0, 200, 100, 0.3);">✔</div>                                   
+                                    <span class="label" style="color: #00C864;">Completado</span>
                                 </div>
                             </div>
                             <div style="background: var(--bg-tertiary); border-radius: 8px; padding: 15px; margin-top: 10px;">
                                 <p style="color: var(--text-secondary); font-size: 0.9rem;">
-                                    <span style="color: var(--accent-blue);">Útil para:</span> Operario (cambio de turno), Responsable de Producción y calidad.
+                                    <span style="color: var(--accent-blue);">Útil para:</span> operario (cambio de turno) y el responsable de Producción.
                                 </p>
                             </div>
                         </div>
@@ -1587,7 +1701,92 @@
         </section>
 
         <!-- ==========================================
-        ESCENA 17: EL NUEVO FLUJO (BENEFICIOS)
+        ESCENA 17: ENTORNO ACTUAL (INTEGRACIÓN)
+        ========================================== -->
+        <section class="scene" data-scene="entorno">
+            <div style="max-width: 1100px; width: 100%;">
+                <span class="badge badge-accent">ARQUITECTURA E INTEGRACIÓN</span>
+                <h2 class="title-medium">Sin cambiar nada del entorno actual</h2>
+                <p class="subtitle" style="max-width: 900px;">
+                    ICG Vision se integra en los flujos existentes sin imponer cambios en el Excel de origen, en SAP ni en la infraestructura. Funciona en cualquier PC con navegador moderno, sin instalación de servidor y sin conexión a internet.
+                </p>
+
+                <!-- Flujo de integración -->
+                <div class="env-flow">
+                    <div class="env-card">
+                        <div class="env-icon">📄</div>
+                        <h4>Excel (.xlsx)</h4>
+                        <p>Lee el informe actual sin modificarlo</p>
+                    </div>
+                    <div class="env-arrow">→</div>
+                    <div class="env-card highlight">
+                        <div class="env-icon">👁️</div>
+                        <h4>ICG Vision</h4>
+                        <p>HTML5 + JS + CSS sin servidor</p>
+                    </div>
+                    <div class="env-arrow">→</div>
+                    <div class="env-card">
+                        <div class="env-icon">🏛️</div>
+                        <h4>SAP</h4>
+                        <p>VBA robusto frente a latencias</p>
+                    </div>
+                    <div class="env-arrow">→</div>
+                    <div class="env-card">
+                        <div class="env-icon">✉️</div>
+                        <h4>Outlook</h4>
+                        <p>Exportación de manguitos</p>
+                    </div>
+                </div>
+
+                <!-- Tabla de especificaciones técnicas -->
+                <div style="overflow-x: auto; margin-top: 20px;">
+                    <table class="tech-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 18%;">PARÁMETRO</th>
+                                <th style="width: 42%;">ESPECIFICACIÓN</th>
+                                <th style="width: 40%;">VENTAJA OPERACIONAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="param">Tecnología</td>
+                                <td>HTML5 + JavaScript + CSS</td>
+                                <td>Sin frameworks de servidor, sin licencias</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Dependencias</td>
+                                <td>Librerías locales (Tailwind, Lucide, SheetJS)</td>
+                                <td>Funciona sin internet en planta</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Compatibilidad</td>
+                                <td>Chrome / Edge en Windows</td>
+                                <td>Cualquier PC de planta con navegador moderno</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Datos</td>
+                                <td>JSON de progreso e incidencias</td>
+                                <td>Compatible con carpetas de red compartidas</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Seguridad</td>
+                                <td>Sin credenciales almacenadas</td>
+                                <td>Sin conexión a bases de datos externas</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Mantenimiento</td>
+                                <td>HTML + JS — editable con cualquier editor de texto</td>
+                                <td>Gestionable íntegramente desde IFA, sin IT ni externos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+        ESCENA 18: EL NUEVO FLUJO (BENEFICIOS)
         ========================================== -->
         <section class="scene" data-scene="beneficios">
             <div>
@@ -1729,17 +1928,16 @@
                 'El Cambio',
                 'ICG VISION',
                 'Filtrado',
-                'Materiales',
-                'Crimpado',
                 'Esquema',
+                'Crimpado',
                 'Modo Visión',
                 'Manguitos',
                 'Progreso',
                 'Calidad',
                 'Notificaciones',
-                'Validación',
                 'SAP',
                 'Autonomía',
+                'Entorno Actual',
                 'Beneficios',
                 'Cierre'
             ];
