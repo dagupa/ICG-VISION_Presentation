@@ -1951,11 +1951,11 @@
             style="max-width: 900px; margin: 0 auto 30px auto"
           >
             <video
-              src="Videos/demo.mp4"
               autoplay
               loop
               muted
               playsinline
+              preload="auto"
               style="
                 width: 100%;
                 height: auto;
@@ -1963,7 +1963,10 @@
                 background: var(--bg-tertiary);
               "
               title="Haz clic para ver el vídeo a pantalla completa"
-            ></video>
+            >
+              <source src="Videos/demo.mp4" type="video/mp4" />
+              Tu navegador no soporta la reproducción de este vídeo.
+            </video>
             <div
               style="
                 padding: 10px;
@@ -3890,6 +3893,12 @@
         generateNavDots();
         updateUI(0);
 
+        // Iniciar reproducción de vídeos de fondo silenciados
+        document.querySelectorAll(".capture-container video").forEach((v) => {
+          v.muted = true;
+          v.play().catch(() => {});
+        });
+
         setTimeout(() => {
           scenes[0].scrollIntoView({ block: "start" });
         }, 100);
@@ -4007,7 +4016,12 @@
                 const captionText =
                   video.parentElement.querySelector("div")?.innerText?.trim() ||
                   "Demostración: Filtrado inteligente";
-                openLightboxVideo(video.currentSrc || video.src, captionText);
+                const videoSrc =
+                  video.currentSrc ||
+                  video.querySelector("source")?.src ||
+                  video.src ||
+                  "Videos/demo.mp4";
+                openLightboxVideo(videoSrc, captionText);
               });
             });
 
