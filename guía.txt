@@ -1,0 +1,452 @@
+================================================================================
+GUÍA MAESTRA, ARGUMENTARIO Y RESPUESTAS (Q&A) ESCENA POR ESCENA
+PRESENTACIÓN EJECUTIVA · ICG VISION
+Ingeniería de Fabricación (IFA)
+================================================================================
+
+Este documento contiene la guía completa de defensa de la presentación interactiva
+de ICG VISION. Está estructurado escena por escena para disponer de respuestas 
+sólidas, técnicas y de gestión ante cualquier pregunta u objeción de Dirección, 
+Producción, IT, Calidad o Ingeniería.
+
+================================================================================
+ÍNDICE DE ESCENAS
+================================================================================
+  1. Portada · "Hacia un taller 100% digital"
+  2. El Problema · "El papel ya no basta"
+  3. El Cambio · "Del informe de cableado al sistema digital"
+  4. ICG VISION · "Una herramienta, múltiples capacidades"
+  5. Control de Calidad · "Detectar, comunicar y corregir"
+  6. Filtrado Inteligente · "Información bajo control"
+  7. Esquema Gráfico · "Ver la conexión"
+  8. Modo Visión · "De leer a seguir"
+  9. Crimpado · "Fabricar con información precisa"
+ 10. Seguimiento · "Saber dónde estamos"
+ 11. Automatización · "Manguitos: un solo clic"
+ 12. SAP sin sorpresas · "Validación y exportación limpia"
+ 13. Autonomía · "De la dependencia a la autonomía"
+ 14. Arquitectura e Integración · "Sin cambiar nada del entorno actual"
+ 15. Beneficios · "El nuevo flujo de fabricación (Comparativa 8 pasos)"
+ 16. Garantías y Factores Clave · "Propuesta de valor y mitigación de riesgos"
+ 17. Plan del Proyecto · "Roadmap y estado actual (Piloto, Tablet, Despliegue)"
+ 18. Cierre Ejecutivo · "Cablear ya es digital"
+
+SECCIONES ADICIONALES:
+ - Matriz de objeciones por perfil (Dirección, Producción, IT, Calidad)
+ - Consejos clave para la exposición en directo
+
+
+================================================================================
+ESCENA 1: PORTADA · "HACIA UN TALLER 100% DIGITAL"
+================================================================================
+- Objetivo: Captar la atención inmediata con un mensaje claro de transformación 
+  industrial, mostrando que la digitalización ya está en marcha.
+- Elementos clave: Logo ICG VISION, contador dinámico animado (0% -> 100%), 
+  firma de Ingeniería de Fabricación.
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Qué significa exactamente 'taller 100% digital' en este contexto?"
+  -> R: "Significa eliminar la dependencia del papel en el puesto de trabajo, 
+     proporcionando al operario información en tiempo real, interactiva y 
+     validada, desde la recepción de la lista de cableado hasta el volcado en SAP."
+
+* P: "¿Esto implica cambiar los sistemas centrales de la empresa?"
+  -> R: "No. Es una digitalización de capa operativa en el puesto de trabajo. No 
+     sustituye a SAP ni a Windchill, sino que digitaliza el proceso de ejecución 
+     en planta que hoy se hace sobre hojas impresas."
+
+
+================================================================================
+ESCENA 2: EL PROBLEMA · "EL PAPEL YA NO BASTA"
+================================================================================
+- Objetivo: Evidenciar las limitaciones reales y los costes ocultos del modelo 
+  tradicional basado en papel.
+- Elementos clave: Ejemplo visual de pila de papeles con tareas manuales (verificar 
+  conexión, buscar cable, comprobar sección, consultar WI de crimpado, reportar 
+  incidencia a mano). Listado de 6 consecuencias críticas.
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Tan grave es seguir utilizando papel si los cuadros se están fabricando?"
+  -> R: "El papel funciona, pero a costa de lentitud, fatiga cognitiva y riesgo. 
+     Cada vez que hay una modificación de ingeniería o un cableado complejo, el 
+     papel no avisa si hay un error, no impide usar una versión obsoleta y no 
+     ofrece feedback a ingeniería cuando el operario detecta un fallo."
+
+* P: "¿Cuál es el mayor coste oculto del papel?"
+  -> R: "El retrabajo y el scrap de material por errores detectados tarde, sumado 
+     al tiempo muerto que pasa el operario buscando especificaciones de herramientas 
+     y manguitos en carpetas independientes."
+
+
+================================================================================
+ESCENA 3: EL CAMBIO · "DEL INFORME AL SISTEMA DIGITAL"
+================================================================================
+- Objetivo: Fijar el concepto clave de la presentación: no se trata de leer un PDF 
+  en pantalla, sino de transformar un documento estático en un proceso interactivo.
+- Elementos clave: Iconografía de transición (Papel -> Dispositivos), comparativa 
+  "Antes: Documento estático" vs "Ahora: Proceso interactivo".
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿En qué se diferencia esto de abrir el Excel en una tablet?"
+  -> R: "Un Excel en tablet sigue siendo un documento estático y además incómodo 
+     de navegar. ICG VISION procesa los datos para guiar paso a paso, resaltar 
+     incompatibilidades, mostrar el esquema gráfico interactivo y automatizar 
+     acciones con un solo clic."
+
+
+================================================================================
+ESCENA 4: ICG VISION · "UNA HERRAMIENTA, MÚLTIPLES CAPACIDADES"
+================================================================================
+- Objetivo: Mostrar el mapa completo de funcionalidades de la herramienta en una 
+  sola vista de conjunto antes de profundizar en cada una.
+- Elementos clave: Grid de 12 capacidades (Carga Excel Proto/SAP, Calidad, 
+  Búsqueda/Filtros, Esquema interactivo, Modo Visión, Info de materiales, 
+  Crimpado, Exportación de manguitos, Feedback de errores, Preparación SAP, 
+  Consulta Windchill, Seguimiento de avance).
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Todas estas 12 funciones están ya desarrolladas o son un concepto futuro?"
+  -> R: "Están desarrolladas y operativas en el prototipo funcional actual. No es 
+     un mockup; el código procesa ficheros reales de planta."
+
+* P: "¿Se pueden activar o desactivar módulos según el tipo de trabajo?"
+  -> R: "Sí, la herramienta está modularizada para adaptarse tanto a cableados de 
+     prototipos rápidos como a fabricación seriada de paneles y equipos de sala."
+
+
+================================================================================
+ESCENA 5: CONTROL DE CALIDAD · "DETECTAR, COMUNICAR Y CORREGIR"
+================================================================================
+- Objetivo: Demostrar que el sistema previene los fallos antes de que lleguen al 
+  banco de trabajo o a SAP.
+- Elementos clave: Capturas reales de detección de errores. Código de colores 
+  automático (Naranja = Duplicados, Amarillo = Sección sin definir, Rojo = Terminal 
+  incompatible, Morado = Longitud no numérica). Sistema de notificación y envío 
+  directo a IFA con 1 clic.
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Qué pasa si un archivo viene con errores de ingeniería?"
+  -> R: "El sistema los marca en color de inmediato al cargar el fichero. El 
+     responsable de fabricación o el operario puede ver la lista de fallos y 
+     enviarla a IFA en un clic sin necesidad de redactar correos ni llamar por 
+     teléfono."
+
+* P: "¿Bloquea la herramienta el trabajo si hay errores leves?"
+  -> R: "Alerta de forma muy visible para evitar fabricar conexiones erróneas, 
+     pero permite seguir trabajando en las ramas y conexiones que son correctas."
+
+
+================================================================================
+ESCENA 6: FILTRADO INTELIGENTE · "INFORMACIÓN BAJO CONTROL"
+================================================================================
+- Objetivo: Mostrar la potencia del filtrado en tiempo real para aislar exactamente 
+  la información que el operario necesita en cada momento.
+- Elementos clave: Captura real del filtrado por elemento, búsqueda global por 
+  cualquier término (conector, señal, tipo de cable, pin, etc.).
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Cómo ayuda esto en mazos de cables grandes (ej. 800 conexiones)?"
+  -> R: "Permite al operario aislar en un segundo todas las conexiones de un 
+     conector específico (ej. 'J1'), o todos los cables de una misma sección o 
+     manguera, trabajando de manera ordenada sin perderse en una lista infinita."
+
+
+================================================================================
+ESCENA 7: ESQUEMA GRÁFICO · "VER LA CONEXIÓN"
+================================================================================
+- Objetivo: Demostrar cómo la representación gráfica interactiva sustituye la 
+  necesidad de descifrar tablas o interpretar esquemas eléctricos complejos.
+- Elementos clave: Captura real del esquema interactivo con zoom, paneo, selección 
+  de pines, hotspots informativos y salto directo entre extremos de conexión.
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿De dónde sale el gráfico? ¿Hay que dibujarlo a mano para cada cuadro?"
+  -> R: "El sistema genera la representación visual dinámicamente a partir de los 
+     propios datos de origen de la lista de cableado. No requiere trabajo extra 
+     de dibujo por parte de ingeniería."
+
+* P: "¿Permite ver los dos extremos del cable?"
+  -> R: "Sí. Al hacer clic en un pin de origen, el esquema resalta automáticamente 
+     el conector y pin de destino, junto con el cable y sus materiales asociados."
+
+
+================================================================================
+ESCENA 8: MODO VISIÓN · "DE LEER A SEGUIR"
+================================================================================
+- Objetivo: Mostrar la experiencia de guiado secuencial que elimina la fatiga 
+  cognitiva del operario.
+- Elementos clave: Captura real del asistente paso a paso con navegación (Paso 3 de 12), 
+  desglose guiado (Punto de conexión -> Cable -> Terminal -> Manguito -> Crimpado).
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Es útil para todos los perfiles de operario?"
+  -> R: "Es especialmente revolucionario para operarios en formación o cuando se 
+     cambia de modelo de equipo, ya que reduce la curva de aprendizaje a una 
+     fracción. Los operarios experimentados pueden alternar libremente entre este 
+     modo y la vista global."
+
+
+================================================================================
+ESCENA 9: CRIMPADO · "FABRICAR CON INFORMACIÓN PRECISA"
+================================================================================
+- Objetivo: Garantizar la correcta ejecución mecánica y eléctrica del crimpado 
+  poniendo la especificación técnica en el punto de trabajo.
+- Elementos clave: Acceso directo a las 5 variables críticas: Tenaza/Crimpadora, 
+  Posicionador, Extractor, Pelacables y Longitud exacta de pelado en mm.
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿De dónde obtiene ICG VISION los datos de las herramientas de crimpado?"
+  -> R: "Están parametrizados en las tablas maestras de terminales y herramientas 
+     homologadas por IFA. Al seleccionar un terminal o cable, el sistema cruza 
+     los datos y muestra la combinación exacta de herramienta, posicionador y 
+     longitud de pelado."
+
+* P: "¿Evita esto errores de calidad en auditorías?"
+  -> R: "Absolutamente. Asegura que el operario siempre use el utillaje homologado 
+     sin margen para 'crimpar con lo que tenga a mano' por no buscar la instrucción."
+
+
+================================================================================
+ESCENA 10: SEGUIMIENTO · "SABER DÓNDE ESTAMOS"
+================================================================================
+- Objetivo: Eliminar la incertidumbre del avance de fabricación ('caja negra') 
+  tanto para el operario como para los mandos intermedios.
+- Elementos clave: Barra de progreso global, mapa de avance por elemento/conector, 
+  estados visuales normalizados (Pendiente [Gris/X], En fabricación [Morado/●], 
+  Completado [Verde/✔]).
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Cómo se guardan estos datos de progreso?"
+  -> R: "Se guardan en ficheros JSON ligeros en la carpeta de red compartida del 
+     proyecto. No requiere base de datos externa ni licencias."
+
+* P: "¿Qué ventaja tiene en los cambios de turno?"
+  -> R: "El operario saliente no tiene que explicar nada verbally; el entrante abre 
+     el fichero y ve al instante qué cables quedaron a medias y cuáles faltan."
+
+
+================================================================================
+ESCENA 11: AUTOMATIZACIÓN · "MANGUITOS: UN SOLO CLIC"
+================================================================================
+- Objetivo: Mostrar un ahorro directo de tiempo administrativo en una tarea que 
+  antes era lenta y propensa a errores tipográficos.
+- Elementos clave: Captura real del módulo de manguitos, flujo automatizado 
+  (Informe -> Identificación automática -> Exportación directa para impresora).
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Cómo se hacía antes la impresión de manguitos?"
+  -> R: "El operario o el técnico tenía que copiar y pegar manualmente textos en 
+     el software de la impresora de manguitos o teclearlos uno a uno, lo que 
+     provocaba erratas en códigos largos."
+
+* P: "¿Es compatible con nuestras impresoras actuales de taller?"
+  -> R: "Sí, genera los formatos de archivo estándar (CSV/TXT) requeridos por el 
+     software de las impresoras de identificación habituales en planta."
+
+
+================================================================================
+ESCENA 12: SAP SIN SORPRESAS · "VALIDACIÓN Y EXPORTACIÓN LIMPIA"
+================================================================================
+- Objetivo: Demostrar cómo ICG VISION resuelve el cuello de botella histórico del 
+  volcado de datos en SAP.
+- Elementos clave: Diagrama de flujo comparativo Antes (Excel -> Conversión manual -> 
+  TXT -> Edición -> Error SAP sin pistas -> Investigación) vs Ahora (Informe -> 
+  Validación previa -> TXT listo y verificado -> Carga en SAP sin sorpresas).
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Por qué fallaba antes la carga en SAP?"
+  -> R: "Porque SAP exige un formato de texto tabulado muy estricto. Cualquier 
+     espacio oculto, carácter especial, pin duplicado o formato de número erróneo 
+     provocaba que SAP rechazara el volcado con mensajes de error crípticos que 
+     requerían horas de depuración manual."
+
+* P: "¿Cómo lo soluciona ICG VISION?"
+  -> R: "Valida todas las reglas sintácticas y de negocio antes de generar el TXT. 
+     Cuando el fichero se genera, se tiene la certeza matemática de que SAP lo 
+     aceptará al primer intento."
+
+
+================================================================================
+ESCENA 13: AUTONOMÍA · "DE LA DEPENDENCIA A LA AUTONOMÍA"
+================================================================================
+- Objetivo: Explicar que la agilidad del proyecto reside en que Ingeniería de 
+  Fabricación es dueña de la solución.
+- Elementos clave: Ciclo de 5 pasos (Detectar -> Proponer -> Modificar -> Corregir -> 
+  Evolucionar). IT deja de ser el cuello de botella para evoluciones funcionales.
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Significa esto que nos saltamos a IT?"
+  -> R: "No. Cumplimos todas las políticas de IT (uso de navegadores estándar, 
+     sin instalación de ejecutables de riesgo, sin servidores no autorizados). 
+     Lo que ganamos es agilidad funcional: si planta necesita añadir un nuevo campo 
+     o regla de validación, IFA lo implementa en 24 horas sin esperar meses por un 
+     desarrollo externo."
+
+
+================================================================================
+ESCENA 14: ARQUITECTURA E INTEGRACIÓN · "SIN CAMBIAR EL ENTORNO"
+================================================================================
+- Objetivo: Tranquilizar a los responsables técnicos y de sistemas sobre la 
+  sencillez, robustez y seguridad de la arquitectura.
+- Elementos clave: Diagrama de integración (Excel -> ICG Vision HTML5/JS -> SAP). 
+  Tabla de especificaciones técnicas:
+  * Tecnología: HTML5 + JavaScript + CSS (Vanilla / Tailwind local).
+  * Dependencias: 100% locales (SheetJS, Lucide). Funciona sin internet.
+  * Compatibilidad: Chrome / Edge en Windows en cualquier PC/Tablet de planta.
+  * Datos: Ficheros JSON en carpetas de red estándar.
+  * Mantenimiento: Editable desde IFA sin software propietario.
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Requiere instalar Node.js, Python o servidores en los PCs de planta?"
+  -> R: "Ninguno. Solo requiere abrir un archivo HTML en el navegador Edge o Chrome 
+     que ya está preinstalado en todos los equipos de la empresa."
+
+* P: "¿Es seguro a nivel de ciberseguridad?"
+  -> R: "Máxima seguridad: no abre puertos de red, no se conecta a internet, no 
+     almacena credenciales y opera dentro de las carpetas de red con los permisos 
+     del usuario corporativo de Windows."
+
+
+================================================================================
+ESCENA 15: BENEFICIOS · "EL NUEVO FLUJO DE FABRICACIÓN"
+================================================================================
+- Objetivo: Comparar de forma exhaustiva los 8 pasos del modelo tradicional frente 
+  a los 8 pasos de ICG VISION y sintetizar las ventajas para cada colectivo.
+
+TABLA COMPARATIVA 8 PASOS:
+--------------------------
+1. Documento           -->  1. Datos
+2. Operario interpreta -->  2. Validación
+3. Busca información   -->  3. Contexto
+4. Comprueba           -->  4. Instrucción
+5. Fabrica             -->  5. Fabricación
+6. Detecta problema    -->  6. Seguimiento
+7. ¿Comunica?          -->  7. Incidencia
+8. Corrige             -->  8. Mejora
+
+BENEFICIOS POR COLECTIVO:
+- Para Producción: Información disponible en el puesto de trabajo. Instrucciones 
+  visuales. Reducción de fatiga y dudas.
+- Para Ingeniería (IFA): Mayor autonomía. Control total sobre las reglas del 
+  proceso. Canal directo de incidencias.
+- Para Dirección: Trazabilidad real de avance. Menos costes de scrap y retrabajo. 
+  Digitalización efectiva de planta con coste de licencia cero.
+
+
+================================================================================
+ESCENA 16: GARANTÍAS Y FACTORES CLAVE · "PROPUESTA DE VALOR"
+================================================================================
+- Objetivo: Despejar cualquier duda sobre viabilidad, riesgo o costes de implantación.
+- Elementos clave: 7 tarjetas de garantía:
+  1. Prototipo funcional hoy mismo (código real probado).
+  2. Sin coste de licencias externas (100% libre de cánones).
+  3. Reversible, sin riesgo (el Excel de origen no se toca).
+  4. Multiusuario (uso simultáneo en cualquier PC de planta).
+  5. Incorporaciones más rápidas (conocimiento integrado en la herramienta).
+  6. Adiós a la conversión manual para SAP (TXT validado a un clic).
+  7. IFA mantiene el control total (mantenimiento autónomo e inmediato).
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Cuál es el coste total de propiedad (TCO) de esta herramienta?"
+  -> R: "Es prácticamente nulo: no hay cuotas mensuales de SaaS, ni licencias por 
+     usuario, ni contratos de mantenimiento con consultoras. El mantenimiento lo 
+     asume IFA como parte de la ingeniería de procesos."
+
+* P: "¿Y si un día decidimos no utilizarlo más?"
+  -> R: "No hay 'lock-in' ni dependencia: los archivos originales de Excel y SAP 
+     siguen existiendo intactos."
+
+
+================================================================================
+ESCENA 17: PLAN DEL PROYECTO · "ROADMAP Y ESTADO ACTUAL"
+================================================================================
+- Objetivo: Presentar un plan de despliegue realista, ordenado en 4 fases, con 
+  hitos claros y criterios de decisión técnicos.
+- Elementos clave:
+  * FASE 1 (Completada): Pruebas en taller en PC (2 operarios, 2 paneles, feedback 
+    positivo, mejoras ya implementadas).
+  * FASE 2 (En curso / Dónde estamos): Prueba Tablet homologada IT & Cableado de 
+    Equipo de Sala. Test de batería para jornada completa de 8h.
+  * FASE 3 (Mediados Octubre): Valoración de resultados (usabilidad, tiempos, modelo 
+    definitivo de tablet, dictamen de pase a despliegue).
+  * FASE 4 (Diciembre): Despliegue escalonado iniciando en Getafe y extendiéndose 
+    a Ocaña y Navalcarnero (sujeto a aprobación presupuestaria de tablets).
+
+Q&A Y PREGUNTAS TÍPICAS:
+------------------------
+* P: "¿Por qué es tan crítico el test de batería de la tablet?"
+  -> R: "Porque en el puesto de cableado los cables de alimentación estorban y son 
+     un riesgo ergonómico. Necesitamos asegurar que la tablet aguanta las 8 horas 
+     de turno continuo de trabajo antes de comprar el lote general."
+
+* P: "¿Qué presupuesto se requiere para el despliegue general?"
+  -> R: "Únicamente la adquisición de las tablets homologadas por IT para los 
+     puestos de trabajo. El software no tiene coste adicional."
+
+
+================================================================================
+ESCENA 18: CIERRE EJECUTIVO · "CABLEAR YA ES DIGITAL"
+================================================================================
+- Objetivo: Dejar una impresión final contundente y memorable.
+- Mensaje central:
+  * "Cablear ya es digital. La información estaba ahí. Ahora puede verse."
+  * Menos errores. Más calidad.
+  * Menor curva de aprendizaje. Mayor productividad.
+  * Equipos más autónomos. Procesos más ágiles.
+  * Resultados más predecibles.
+
+Q&A FINAL DE CIERRE:
+--------------------
+* P: "¿Cuál es el siguiente paso inmediato que solicitamos hoy?"
+  -> R: "Dar continuidad a la Fase 2 en curso: completar la prueba con la tablet 
+     cedida por IT en el cableado del Equipo de Sala y presentar los resultados 
+     a mediados de octubre para autorizar el despliegue escalonado."
+
+
+================================================================================
+MATRIZ DE RESPUESTA A OBJECIONES POR PERFIL
+================================================================================
+
+1. SI PREGUNTA DIRECCIÓN GENERAL / FINANCIERA:
+   - Objeción: "¿Por qué desarrollar algo propio en vez de comprar un software comercial?"
+   - Respuesta: "Los softwares comerciales de cableado son extremadamente caros, 
+     imponen licencias anuales por puesto, tardan meses en configurarse y no se 
+     adaptan con exactitud a nuestro flujo específico entre Excel y SAP. ICG VISION 
+     resuelve exactamente el 100% de nuestra necesidad real a coste de licencia cero."
+
+2. SI PREGUNTA EL RESPONSABLE DE IT:
+   - Objeción: "¿Esto crea una aplicación 'shadow IT' que luego nadie sabe mantener?"
+   - Respuesta: "No. Está construido bajo estándares web universales (HTML/JS) 
+     completamente documentados, sin dependencias de compilación ni servidores raros. 
+     Cualquier técnico o informático puede auditar o editar el código en minutos."
+
+3. SI PREGUNTA EL JEFE DE TALLER / PRODUCCIÓN:
+   - Objeción: "¿Los operarios van a perder tiempo mirando la pantalla en vez de cablear?"
+   - Respuesta: "En las pruebas piloto de la Fase 1 se demostró lo contrario: el tiempo 
+     que antes pasaban buscando en papeles y dudando ahora lo dedican a cablear de 
+     forma continua y con la certeza de que el conexionado es correcto."
+
+4. SI PREGUNTA CALIDAD:
+   - Objeción: "¿Cómo aseguramos que la versión que se abre en el taller es la aprobada?"
+   - Respuesta: "ICG VISION lee directamente el fichero del proyecto depositado en 
+     la ruta oficial de red controlada por Ingeniería, evitando la circulación de 
+     hojas impresas obsoletas por el taller."
+
+================================================================================
+Fin de la Guía Maestra · ICG VISION · Ingeniería de Fabricación
+================================================================================

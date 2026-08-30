@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
-    <title>ICG VISION · Presentación Ejecutiva</title>
+    <title>ICG VISION · Presentación</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -1294,8 +1294,9 @@
         z-index: 10000;
         white-space: nowrap;
       }
-      /* Cursor hint on clickable images */
-      .capture-container img {
+      /* Cursor hint on clickable images and videos */
+      .capture-container img,
+      .capture-container video {
         cursor: zoom-in !important;
       }
     </style>
@@ -1723,6 +1724,216 @@
       </section>
 
       <!-- ==========================================
+        ESCENA 12: CONTROL DE CALIDAD Y NOTIFICACIONES (fusionado)
+        ========================================== -->
+      <section class="scene" data-scene="calidad">
+        <div>
+          <span class="badge badge-accent">CONTROL DE CALIDAD</span>
+          <h2 class="title-medium">Detectar, comunicar y corregir</h2>
+          <p class="subtitle">
+            El sistema detecta errores en el fichero, los clasifica por tipo y
+            los comunica para su corrección antes de fabricar.
+          </p>
+          <div class="grid-2col">
+            <!-- Columna izquierda: detección + código de colores -->
+            <div>
+              <div class="capture-container" style="margin-bottom: 16px">
+                <img
+                  src="Imágenes presentación/2-Detección de errores.png"
+                  alt="Detección de errores"
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    height: auto;
+                    background: var(--bg-tertiary);
+                  "
+                />
+                <div
+                  style="
+                    padding: 10px;
+                    background: var(--bg-tertiary);
+                    text-align: center;
+                    color: var(--text-muted);
+                    font-size: 0.8rem;
+                    border-top: 1px solid var(--border-color);
+                  "
+                >
+                  Captura real: Detección de errores
+                </div>
+              </div>
+              <div class="card-glass">
+                <h3
+                  style="
+                    color: var(--text-secondary);
+                    margin-bottom: 12px;
+                    font-size: 0.9rem;
+                  "
+                >
+                  Código de colores del análisis automático
+                </h3>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 8px;
+                  "
+                >
+                  <div
+                    style="
+                      background: var(--bg-tertiary);
+                      padding: 10px;
+                      border-radius: 8px;
+                      border-left: 4px solid var(--accent-orange);
+                    "
+                  >
+                    <span class="status-badge status-warning">Naranja</span>
+                    <p
+                      style="
+                        margin-top: 5px;
+                        font-size: 0.82rem;
+                        color: var(--text-secondary);
+                      "
+                    >
+                      DUPLICADOS
+                    </p>
+                  </div>
+                  <div
+                    style="
+                      background: var(--bg-tertiary);
+                      padding: 10px;
+                      border-radius: 8px;
+                      border-left: 4px solid var(--accent-yellow);
+                    "
+                  >
+                    <span class="status-badge status-yellow">Amarillo</span>
+                    <p
+                      style="
+                        margin-top: 5px;
+                        font-size: 0.82rem;
+                        color: var(--text-secondary);
+                      "
+                    >
+                      SECCIÓN SIN DEFINIR
+                    </p>
+                  </div>
+                  <div
+                    style="
+                      background: var(--bg-tertiary);
+                      padding: 10px;
+                      border-radius: 8px;
+                      border-left: 4px solid var(--accent-red);
+                    "
+                  >
+                    <span class="status-badge status-error">Rojo</span>
+                    <p
+                      style="
+                        margin-top: 5px;
+                        font-size: 0.82rem;
+                        color: var(--text-secondary);
+                      "
+                    >
+                      TERMINAL INCOMPATIBLE
+                    </p>
+                  </div>
+                  <div
+                    style="
+                      background: var(--bg-tertiary);
+                      padding: 10px;
+                      border-radius: 8px;
+                      border-left: 4px solid var(--accent-purple);
+                    "
+                  >
+                    <p
+                      style="
+                        margin-top: 5px;
+                        font-size: 0.82rem;
+                        color: var(--text-secondary);
+                      "
+                    >
+                      LONGITUD NO NUMÉRICA
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Columna derecha: notificación + envío -->
+            <div>
+              <h3 style="color: var(--accent-blue); margin-bottom: 12px">
+                Notificación y envío para corrección
+              </h3>
+              <div class="capture-container" style="margin-bottom: 12px">
+                <img
+                  src="Imágenes presentación/11-errores_1.png"
+                  alt="Notificación de errores"
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    height: auto;
+                    background: var(--bg-tertiary);
+                  "
+                />
+                <div
+                  style="
+                    padding: 10px;
+                    background: var(--bg-tertiary);
+                    text-align: center;
+                    color: var(--text-muted);
+                    font-size: 0.8rem;
+                    border-top: 1px solid var(--border-color);
+                  "
+                >
+                  Captura real: Notificación de errores
+                </div>
+              </div>
+              <div class="capture-container" style="margin-bottom: 12px">
+                <img
+                  src="Imágenes presentación/13-envio errores.png"
+                  alt="Envío de errores para corrección"
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    height: auto;
+                    background: var(--bg-tertiary);
+                  "
+                />
+                <div
+                  style="
+                    padding: 10px;
+                    background: var(--bg-tertiary);
+                    text-align: center;
+                    color: var(--text-muted);
+                    font-size: 0.8rem;
+                    border-top: 1px solid var(--border-color);
+                  "
+                >
+                  Captura real: Envío de errores para su corrección
+                </div>
+              </div>
+              <div
+                style="
+                  padding: 14px 16px;
+                  background: rgba(0, 180, 216, 0.06);
+                  border: 1px solid rgba(0, 180, 216, 0.2);
+                  border-radius: 10px;
+                "
+              >
+                <p
+                  style="
+                    font-size: 0.83rem;
+                    color: var(--text-secondary);
+                    line-height: 1.5;
+                  "
+                >
+                  💬 Sin papel, sin llamadas: el operario envía el error
+                  directamente desde la herramienta a IFA para su corrección.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
         ESCENA 5: FILTRADO INTELIGENTE
         ========================================== -->
       <section class="scene" data-scene="filtrado">
@@ -1734,28 +1945,51 @@
             disponible cuando el operario la necesita.
           </p>
 
-          <!-- Captura ampliada y centrada -->
+          <!-- Vídeo demostración en loop -->
           <div
             class="capture-container"
             style="max-width: 900px; margin: 0 auto 30px auto"
           >
-            <img
-              src="Imágenes presentación/4-Filtrado inteligente.png"
-              alt="Filtrado inteligente"
-              loading="lazy"
-              style="width: 100%; height: auto; background: var(--bg-tertiary)"
-            />
+            <video
+              src="Videos/demo.mp4"
+              autoplay
+              loop
+              muted
+              playsinline
+              style="
+                width: 100%;
+                height: auto;
+                display: block;
+                background: var(--bg-tertiary);
+              "
+              title="Haz clic para ver el vídeo a pantalla completa"
+            ></video>
             <div
               style="
                 padding: 10px;
                 background: var(--bg-tertiary);
-                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
                 color: var(--text-muted);
                 font-size: 0.8rem;
                 border-top: 1px solid var(--border-color);
               "
             >
-              Captura real: Filtrado inteligente
+              <span>🎬 Demostración: Filtrado inteligente en acción</span>
+              <span
+                style="
+                  font-size: 0.7rem;
+                  color: var(--accent-blue);
+                  background: rgba(0, 180, 216, 0.15);
+                  padding: 2px 8px;
+                  border-radius: 12px;
+                  border: 1px solid rgba(0, 180, 216, 0.3);
+                "
+              >
+                Clic para pantalla completa ⛶
+              </span>
             </div>
           </div>
 
@@ -2219,96 +2453,7 @@
       </section>
 
       <!-- ==========================================
-        ESCENA 10: MANGUITOS
-        ========================================== -->
-      <section class="scene" data-scene="manguitos">
-        <div>
-          <span class="badge">AUTOMATIZACIÓN</span>
-          <h2 class="title-medium">Manguitos: un solo clic</h2>
-          <p class="subtitle">
-            Una tarea que antes requería preparación manual se convierte en una
-            automatización de un sólo clic.
-          </p>
-          <div class="grid-2col">
-            <div>
-              <div class="capture-container">
-                <img
-                  src="Imágenes presentación/10-Ficheros para impresión de manguitos a un solo clic.png"
-                  alt="Ficheros para impresión de manguitos"
-                  loading="lazy"
-                  style="
-                    width: 100%;
-                    height: auto;
-                    background: var(--bg-tertiary);
-                  "
-                />
-                <div
-                  style="
-                    padding: 10px;
-                    background: var(--bg-tertiary);
-                    text-align: center;
-                    color: var(--text-muted);
-                    font-size: 0.8rem;
-                    border-top: 1px solid var(--border-color);
-                  "
-                >
-                  Captura real: Ficheros para impresión de manguitos
-                </div>
-              </div>
-            </div>
-            <div>
-              <h3 style="color: var(--accent-blue)">
-                Flujo de trabajo automatizado
-              </h3>
-              <div class="capture-container" style="margin-top: 15px">
-                <img
-                  src="Imágenes presentación/Manguitos.png"
-                  alt="Manguitos"
-                  loading="lazy"
-                  style="
-                    width: 100%;
-                    height: auto;
-                    background: var(--bg-tertiary);
-                  "
-                />
-              </div>
-              <button
-                style="
-                  margin-top: 20px;
-                  background: var(--accent-blue);
-                  color: var(--bg-primary);
-                  border: none;
-                  padding: 10px 24px;
-                  border-radius: 8px;
-                  font-weight: 700;
-                  cursor: pointer;
-                  transition: all 0.3s ease;
-                  width: 100%;
-                "
-              >
-                📤 Exportar manguitos
-              </button>
-              <div
-                style="
-                  margin-top: 15px;
-                  background: var(--bg-tertiary);
-                  padding: 12px;
-                  border-radius: 8px;
-                  border-left: 3px solid var(--accent-cyan);
-                "
-              >
-                <p style="color: var(--text-secondary); font-size: 0.9rem">
-                  Información del informe → identificación automática →
-                  exportación → envío para su impresión
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========================================
-        ESCENA 11: CONTROL DE PROGRESO
+        ESCENA 10: CONTROL DE PROGRESO
         ========================================== -->
       <section class="scene" data-scene="progreso">
         <div>
@@ -2451,22 +2596,22 @@
       </section>
 
       <!-- ==========================================
-        ESCENA 12: CONTROL DE CALIDAD
+        ESCENA 11: MANGUITOS (AUTOMATIZACIÓN)
         ========================================== -->
-      <section class="scene" data-scene="calidad">
+      <section class="scene" data-scene="manguitos">
         <div>
-          <span class="badge badge-accent">CONTROL DE CALIDAD</span>
-          <h2 class="title-medium">Detectar antes</h2>
+          <span class="badge">AUTOMATIZACIÓN</span>
+          <h2 class="title-medium">Manguitos: un solo clic</h2>
           <p class="subtitle">
-            El sistema no solo muestra los datos. También comprueba que los
-            datos tengan sentido.
+            Una tarea que antes requería preparación manual se convierte en una
+            automatización de un sólo clic.
           </p>
           <div class="grid-2col">
             <div>
               <div class="capture-container">
                 <img
-                  src="Imágenes presentación/2-Detección de errores.png"
-                  alt="Detección de errores"
+                  src="Imágenes presentación/10-Ficheros para impresión de manguitos a un solo clic.png"
+                  alt="Ficheros para impresión de manguitos"
                   loading="lazy"
                   style="
                     width: 100%;
@@ -2484,104 +2629,18 @@
                     border-top: 1px solid var(--border-color);
                   "
                 >
-                  Captura real: Detección de errores
+                  Captura real: Ficheros para impresión de manguitos
                 </div>
               </div>
             </div>
             <div>
-              <div class="card-glass">
-                <h3 style="color: var(--text-secondary); margin-bottom: 15px">
-                  Análisis automático del fichero
-                </h3>
-                <div
-                  style="
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 10px;
-                  "
-                >
-                  <div
-                    style="
-                      background: var(--bg-tertiary);
-                      padding: 12px;
-                      border-radius: 8px;
-                      border-left: 4px solid var(--accent-orange);
-                    "
-                  >
-                    <span class="status-badge status-warning">Naranja</span>
-                    <p
-                      style="
-                        margin-top: 5px;
-                        font-size: 0.85rem;
-                        color: var(--text-secondary);
-                      "
-                    >
-                      DUPLICADOS
-                    </p>
-                  </div>
-                  <div
-                    style="
-                      background: var(--bg-tertiary);
-                      padding: 12px;
-                      border-radius: 8px;
-                      border-left: 4px solid var(--accent-yellow);
-                    "
-                  >
-                    <span class="status-badge status-yellow">Amarillo</span>
-                    <p
-                      style="
-                        margin-top: 5px;
-                        font-size: 0.85rem;
-                        color: var(--text-secondary);
-                      "
-                    >
-                      SECCIÓN SIN DEFINIR
-                    </p>
-                  </div>
-                  <div
-                    style="
-                      background: var(--bg-tertiary);
-                      padding: 12px;
-                      border-radius: 8px;
-                      border-left: 4px solid var(--accent-red);
-                    "
-                  >
-                    <span class="status-badge status-error">Rojo</span>
-                    <p
-                      style="
-                        margin-top: 5px;
-                        font-size: 0.85rem;
-                        color: var(--text-secondary);
-                      "
-                    >
-                      TERMINAL INCOMPATIBLE
-                    </p>
-                  </div>
-                  <div
-                    style="
-                      background: var(--bg-tertiary);
-                      padding: 12px;
-                      border-radius: 8px;
-                      border-left: 4px solid var(--accent-purple);
-                    "
-                  >
-                    <span class="status-badge status-info">Morado</span>
-                    <p
-                      style="
-                        margin-top: 5px;
-                        font-size: 0.85rem;
-                        color: var(--text-secondary);
-                      "
-                    >
-                      LONGITUD NO NUMÉRICA
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <h3 style="color: var(--accent-blue)">
+                Flujo de trabajo automatizado
+              </h3>
               <div class="capture-container" style="margin-top: 15px">
                 <img
-                  src="Imágenes presentación/3-Visualizacion de errores.png"
-                  alt="Visualización de errores"
+                  src="Imágenes presentación/Manguitos.png"
+                  alt="Manguitos"
                   loading="lazy"
                   style="
                     width: 100%;
@@ -2589,112 +2648,36 @@
                     background: var(--bg-tertiary);
                   "
                 />
-                <div
-                  style="
-                    padding: 10px;
-                    background: var(--bg-tertiary);
-                    text-align: center;
-                    color: var(--text-muted);
-                    font-size: 0.8rem;
-                    border-top: 1px solid var(--border-color);
-                  "
-                >
-                  Captura real: Visualización de errores
-                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ==========================================
-        ESCENA 13: NOTIFICACIÓN DE ERRORES
-        ========================================== -->
-      <section class="scene" data-scene="notificaciones">
-        <div>
-          <span class="badge">NOTIFICACIONES</span>
-          <h2 class="title-medium">
-            Errores detectados, notificaciones claras
-          </h2>
-          <p class="subtitle">
-            El sistema no solo detecta errores, sino que los comunica de forma
-            clara para su corrección.
-          </p>
-          <div class="grid-2col">
-            <div>
-              <div class="capture-container">
-                <img
-                  src="Imágenes presentación/11-errores_1.png"
-                  alt="Notificación de errores"
-                  loading="lazy"
-                  style="
-                    width: 100%;
-                    height: auto;
-                    background: var(--bg-tertiary);
-                  "
-                />
-                <div
-                  style="
-                    padding: 10px;
-                    background: var(--bg-tertiary);
-                    text-align: center;
-                    color: var(--text-muted);
-                    font-size: 0.8rem;
-                    border-top: 1px solid var(--border-color);
-                  "
-                >
-                  Captura real: Notificación de errores
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="capture-container">
-                <img
-                  src="Imágenes presentación/12-errores_2.png"
-                  alt="Notificación de errores 2"
-                  loading="lazy"
-                  style="
-                    width: 100%;
-                    height: auto;
-                    background: var(--bg-tertiary);
-                  "
-                />
-                <div
-                  style="
-                    padding: 10px;
-                    background: var(--bg-tertiary);
-                    text-align: center;
-                    color: var(--text-muted);
-                    font-size: 0.8rem;
-                    border-top: 1px solid var(--border-color);
-                  "
-                >
-                  Captura real: Notificación de errores (detalle)
-                </div>
-              </div>
-              <div class="capture-container" style="margin-top: 15px">
-                <img
-                  src="Imágenes presentación/13-envio errores.png"
-                  alt="Envío de errores para corrección"
-                  loading="lazy"
-                  style="
-                    width: 100%;
-                    height: auto;
-                    background: var(--bg-tertiary);
-                  "
-                />
-                <div
-                  style="
-                    padding: 10px;
-                    background: var(--bg-tertiary);
-                    text-align: center;
-                    color: var(--text-muted);
-                    font-size: 0.8rem;
-                    border-top: 1px solid var(--border-color);
-                  "
-                >
-                  Captura real: Envío de errores para su corrección
-                </div>
+              <button
+                style="
+                  margin-top: 20px;
+                  background: var(--accent-blue);
+                  color: var(--bg-primary);
+                  border: none;
+                  padding: 10px 24px;
+                  border-radius: 8px;
+                  font-weight: 700;
+                  cursor: pointer;
+                  transition: all 0.3s ease;
+                  width: 100%;
+                "
+              >
+                📤 Exportar manguitos
+              </button>
+              <div
+                style="
+                  margin-top: 15px;
+                  background: var(--bg-tertiary);
+                  padding: 12px;
+                  border-radius: 8px;
+                  border-left: 3px solid var(--accent-cyan);
+                "
+              >
+                <p style="color: var(--text-secondary); font-size: 0.9rem">
+                  Información del informe → identificación automática →
+                  exportación → envío para su impresión
+                </p>
               </div>
             </div>
           </div>
@@ -3015,9 +2998,7 @@
                 <tr>
                   <td class="param">Mantenimiento</td>
                   <td>HTML + JS — editable con cualquier editor de texto</td>
-                  <td>
-                    Gestionable íntegramente desde IFA, sin IT, sin externos
-                  </td>
+                  <td>Gestionable desde IFA sin dependencia de terceros</td>
                 </tr>
               </tbody>
             </table>
@@ -3171,7 +3152,7 @@
               </div>
               <p>
                 No es una propuesta en papel. El código existe, está documentado
-                y puede demostrarse en cualquier PC de planta.
+                y puede utilizarse en cualquier PC de planta.
               </p>
             </div>
 
@@ -3181,10 +3162,7 @@
                 <span class="val-icon">💶</span>
                 <h4>Sin coste de licencias externas</h4>
               </div>
-              <p>
-                Todas las librerías son de código abierto. No hay dependencias
-                de proveedores externos ni de conexión a internet.
-              </p>
+              <p>100% open source. Sin licencias de servidor ni de terceros.</p>
             </div>
 
             <!-- Tarjeta 3 -->
@@ -3203,7 +3181,7 @@
             <div class="value-card">
               <div class="value-card-header">
                 <span class="val-icon">👥</span>
-                <h4>Multiusuario desde el día 1</h4>
+                <h4>Multiusuario</h4>
               </div>
               <p>
                 Cualquier número de operarios puede usarlo simultáneamente desde
@@ -3612,18 +3590,35 @@
       id="lightbox"
       role="dialog"
       aria-modal="true"
-      aria-label="Imagen ampliada"
+      aria-label="Contenido ampliado"
     >
       <div id="lightbox-img-wrapper">
         <img id="lightboxImg" src="" alt="" />
+        <video
+          id="lightboxVideo"
+          src=""
+          controls
+          autoplay
+          loop
+          playsinline
+          style="
+            display: none;
+            max-width: 92vw;
+            max-height: 88vh;
+            border-radius: 8px;
+            box-shadow: 0 30px 100px rgba(0, 0, 0, 0.95);
+            outline: none;
+            background: #000;
+          "
+        ></video>
       </div>
       <button id="lightboxClose" aria-label="Cerrar">&#x2715;</button>
       <div id="lightboxCaption"></div>
-      <span class="lightbox-hint"
+      <span class="lightbox-hint" id="lightboxHint"
         >Rueda para hacer zoom &nbsp;·&nbsp; Doble clic para ampliar
         &nbsp;·&nbsp; Arrastrar para mover &nbsp;·&nbsp; Esc para cerrar</span
       >
-      <div class="lightbox-controls">
+      <div class="lightbox-controls" id="lightboxControls">
         <button class="lightbox-btn" id="lbZoomOut" title="Reducir (−)">
           &#x2212;
         </button>
@@ -3666,14 +3661,13 @@
           "El Problema",
           "El Cambio",
           "ICG VISION",
+          "Calidad y Notif.",
           "Filtrado",
           "Esquema",
           "Modo Visión",
           "Crimpado",
-          "Manguitos",
           "Progreso",
-          "Calidad",
-          "Notificaciones",
+          "Manguitos",
           "SAP",
           "Autonomía",
           "Entorno Actual",
@@ -3906,6 +3900,7 @@
         (function () {
           const lightbox = document.getElementById("lightbox");
           const lbImg = document.getElementById("lightboxImg");
+          const lbVideo = document.getElementById("lightboxVideo");
           const lbCaption = document.getElementById("lightboxCaption");
           const lbClose = document.getElementById("lightboxClose");
           const lbZoomIn = document.getElementById("lbZoomIn");
@@ -3913,6 +3908,8 @@
           const lbReset = document.getElementById("lbReset");
           const lbZoomLabel = document.getElementById("lbZoomLabel");
           const lbWrapper = document.getElementById("lightbox-img-wrapper");
+          const lbControls = document.getElementById("lightboxControls");
+          const lbHint = document.getElementById("lightboxHint");
 
           const MIN_ZOOM = 0.4,
             MAX_ZOOM = 5,
@@ -3923,6 +3920,7 @@
           let isDragging = false,
             dragStartX = 0,
             dragStartY = 0;
+          let isVideoMode = false;
 
           function applyTransform() {
             lbImg.style.transform = `translate(${panX}px, ${panY}px) scale(${currentZoom})`;
@@ -3931,6 +3929,7 @@
           }
 
           function setZoom(z) {
+            if (isVideoMode) return;
             currentZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, z));
             if (currentZoom === 1) {
               panX = 0;
@@ -3940,8 +3939,17 @@
           }
 
           function openLightbox(src, alt) {
+            isVideoMode = false;
+            if (lbVideo) {
+              lbVideo.pause();
+              lbVideo.src = "";
+              lbVideo.style.display = "none";
+            }
+            lbImg.style.display = "block";
             lbImg.src = src;
             lbCaption.textContent = alt || "";
+            if (lbControls) lbControls.style.display = "flex";
+            if (lbHint) lbHint.style.display = "block";
             currentZoom = 1;
             panX = 0;
             panY = 0;
@@ -3950,10 +3958,36 @@
             document.body.style.overflow = "hidden";
           }
 
+          function openLightboxVideo(src, caption) {
+            isVideoMode = true;
+            lbImg.src = "";
+            lbImg.style.display = "none";
+            if (lbControls) lbControls.style.display = "none";
+            if (lbHint) lbHint.style.display = "none";
+            if (lbVideo) {
+              lbVideo.src = src;
+              lbVideo.style.display = "block";
+              lbVideo.currentTime = 0;
+              lbVideo.play().catch(() => {});
+            }
+            lbCaption.textContent = caption || "Vídeo demostración";
+            lightbox.classList.add("active");
+            document.body.style.overflow = "hidden";
+          }
+
           function closeLightbox() {
             lightbox.classList.remove("active");
             document.body.style.overflow = "";
             lbImg.src = "";
+            lbImg.style.display = "block";
+            if (lbVideo) {
+              lbVideo.pause();
+              lbVideo.src = "";
+              lbVideo.style.display = "none";
+            }
+            if (lbControls) lbControls.style.display = "flex";
+            if (lbHint) lbHint.style.display = "block";
+            isVideoMode = false;
           }
 
           // Attach click to all presentation images
@@ -3963,6 +3997,19 @@
               openLightbox(img.src, img.alt);
             });
           });
+
+          // Attach click to all presentation videos
+          document
+            .querySelectorAll(".capture-container video")
+            .forEach((video) => {
+              video.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const captionText =
+                  video.parentElement.querySelector("div")?.innerText?.trim() ||
+                  "Demostración: Filtrado inteligente";
+                openLightboxVideo(video.currentSrc || video.src, captionText);
+              });
+            });
 
           // Close on overlay click
           lightbox.addEventListener("click", (e) => {
@@ -3981,6 +4028,7 @@
 
           // Double-click to toggle zoom
           lbWrapper.addEventListener("dblclick", () => {
+            if (isVideoMode) return;
             if (currentZoom === 1) {
               currentZoom = 2;
               panX = 0;
@@ -3993,6 +4041,7 @@
           lbWrapper.addEventListener(
             "wheel",
             (e) => {
+              if (isVideoMode) return;
               e.preventDefault();
               const delta = e.deltaY < 0 ? ZOOM_STEP : -ZOOM_STEP;
               setZoom(currentZoom + delta);
@@ -4007,15 +4056,17 @@
               e.stopPropagation();
               closeLightbox();
             }
-            if (e.key === "+" || e.key === "=")
-              setZoom(currentZoom + ZOOM_STEP);
-            if (e.key === "-") setZoom(currentZoom - ZOOM_STEP);
-            if (e.key === "r" || e.key === "R") setZoom(1);
+            if (!isVideoMode) {
+              if (e.key === "+" || e.key === "=")
+                setZoom(currentZoom + ZOOM_STEP);
+              if (e.key === "-") setZoom(currentZoom - ZOOM_STEP);
+              if (e.key === "r" || e.key === "R") setZoom(1);
+            }
           });
 
           // Drag-to-pan (only when zoomed in)
           lbWrapper.addEventListener("mousedown", (e) => {
-            if (currentZoom <= 1) return;
+            if (isVideoMode || currentZoom <= 1) return;
             isDragging = true;
             dragStartX = e.clientX - panX;
             dragStartY = e.clientY - panY;
@@ -4024,7 +4075,7 @@
           });
 
           window.addEventListener("mousemove", (e) => {
-            if (!isDragging) return;
+            if (isVideoMode || !isDragging) return;
             panX = e.clientX - dragStartX;
             panY = e.clientY - dragStartY;
             lbImg.style.transform = `translate(${panX}px, ${panY}px) scale(${currentZoom})`;
